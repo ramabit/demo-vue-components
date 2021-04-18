@@ -1,0 +1,7 @@
+// naming: $font--
+
+// fallback font in case telegrotesk cant be loaded
+$font--fallback-font-families: Arial, sans-serif;
+
+// default font variable. Used in html selector to cascade the font down to all elements
+$font--family: Helvetica, $font--fallback-font-families;

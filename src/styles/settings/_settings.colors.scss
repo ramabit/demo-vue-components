@@ -1,0 +1,26 @@
+// naming: $color--
+
+$color--white: #ffffff;
+$color--black: #000000;
+
+$color--grey-nero: #262626;
+$color--grey-second: #404040;
+$color--grey-second-light: #626262;
+
+$color--grey-ultra-light: #f6f6f6;
+$color--grey-very-light: #cccccc;
+$color--grey-light: #d0d0d0;
+$color--grey: #D9D9D9;
+$color--grey-border: #979797;
+
+$color--blue: #006385;
+$color--blue-light: #189fbb;
+$color--blue-very-light: #00bbff;
+$color--red: #ff1f1f;
+$color--green: #5fd702;
+$color--orange: #ff9f2d;
+
+// default colors
+$color--background: $color--white;
+$color--text: $color--grey-nero;
+$color--border: $color--grey-border;

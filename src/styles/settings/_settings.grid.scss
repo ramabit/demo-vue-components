@@ -1,0 +1,11 @@
+// http://hugeinc.github.io/flexboxgrid-sass/
+
+// number of columns of the layout.
+$fx-grid-grid-columns: 12 !default;
+
+// breakpoints for the project
+$grid-breakpoints:
+        sm $bp-min-small,
+        md $bp-min-medium,
+        lg $bp-min-large,
+        xl $bp-min-xlarge;

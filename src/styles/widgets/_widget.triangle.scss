@@ -1,0 +1,44 @@
+$triangle-size--lg: 8px;
+$triangle-size--sm: 1vw;
+
+.w-triangle--green {
+  border-color: transparent transparent $color--green transparent;
+  border-style: solid;
+  border-width: 0 $triangle-size--lg $triangle-size--lg $triangle-size--lg;
+  margin-right: 6px;
+  height: 0;
+  width: 0;
+}
+
+.w-triangle--red {
+  border-color: $color--red transparent transparent transparent;
+  border-style: solid;
+  border-width: $triangle-size--lg $triangle-size--lg 0 $triangle-size--lg;
+  margin-right: 6px;
+  height: 0;
+  width: 0;
+}
+
+.w-triangle--orange {
+  border-color: transparent transparent transparent $color--orange;
+  border-style: solid;
+  border-width: $triangle-size--lg 0 $triangle-size--lg $triangle-size--lg;
+  margin-right: 6px;
+  height: 0;
+  width: 0;
+}
+
+@media screen and (max-width: $bp-max-medium) {
+  .w-triangle--green {
+    border-width: 0 $triangle-size--sm $triangle-size--sm $triangle-size--sm;
+    margin-right: 0.5vw;
+  }
+  .w-triangle--red {
+    border-width: $triangle-size--sm $triangle-size--sm 0 $triangle-size--sm;
+    margin-right: 0.5vw;
+  }
+  .w-triangle--orange {
+    border-width: $triangle-size--sm 0 $triangle-size--sm $triangle-size--sm;
+    margin-right: 0.5vw;
+  }
+}

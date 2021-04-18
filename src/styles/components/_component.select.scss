@@ -1,0 +1,59 @@
+.c-custom-select {
+  min-width: 100px;
+  cursor: pointer;
+
+  .selector {
+    background: $color--grey-second;
+    position: relative;
+    z-index: 1;
+    .arrow {
+      position: absolute;
+      right: 10px;
+      top: 40%;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 10px solid $color--orange;
+      transform: rotateZ(0deg) translateY(0px);
+      transition-duration: 0.3s;
+      transition-timing-function: cubic-bezier(.59,1.39,.37,1.01);
+    }
+    .expanded {
+      transform: rotateZ(180deg) translateY(2px);
+    }
+    .label {
+      display: block;
+      padding: 12px;
+      font-size: 16px;
+      color: $color--orange;
+    }
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+  }
+  li {
+    padding: 12px;
+    color: $color--grey-nero;
+    &:hover {
+      color: white;
+      background: $color--orange;
+    }
+  }
+  .current {
+    background: $color--grey-very-light;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .visible {
+    visibility: visible;
+  }
+}

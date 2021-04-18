@@ -1,0 +1,20 @@
+.c-accordion--button {
+  background-color: $color--grey;
+  color: $color--blue;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: $length--bu;
+  border-bottom: $border-width solid $color--border;
+}
+
+.c-accordion--active, .c-accordion--button:hover {
+  background-color: beige;
+}
+
+.c-accordion--panel {
+  padding: 0 18px;
+  background-color: $color--white;
+  color: $color--black;
+  overflow: hidden;
+}

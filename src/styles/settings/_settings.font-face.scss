@@ -1,0 +1,43 @@
+$font-face-weight--light: 300;
+$font-face-weight--regular: 400;
+$font-face-weight--medium: 500;
+$font-face-weight--bold: 700;
+$font-face-weight--ultra: 900;
+
+$font-face-asset-path: "../assets/fonts/";
+$font-face-family-name: Helvetica;
+
+// specify fonts from local files
+//$font-faces: (
+//        'light': ('weight': $font-face-weight--light,
+//                  'style': normal,
+//                   'file-name': "..."),
+//
+//        'regular': ('weight': $font-face-weight--regular,
+//                    'style': normal,
+//                    'file-name': "..."),
+//
+//        'regular-italic': ('weight': $font-face-weight--regular,
+//                           'style': italic,
+//                           'file-name': "..."),
+//
+//        'medium': ('weight': $font-face-weight--medium,
+//                   'style': normal,
+//                   'file-name': "..."),
+//
+//        'medium-italic': ('weight': $font-face-weight--medium,
+//                          'style': italic,
+//                          'file-name': "..."),
+//
+//        'bold': ('weight': $font-face-weight--bold,
+//                 'style': normal,
+//                 'file-name': "..."),
+//
+//        'bold-italic': ('weight': $font-face-weight--bold,
+//                        'style': italic,
+//                        'file-name': "..."),
+//
+//        'ultra': ('weight': $font-face-weight--ultra,
+//                  'style': normal,
+//                  'file-name': "..."),
+//);

@@ -1,0 +1,33 @@
+@import "layout/**/*.scss";
+@import "settings/**/*.scss";
+@import "utilities/**/*.scss";
+@import "widgets/**/*.scss";
+@import "components/**/*.scss";
+
+body {
+  background-color: $color--background;
+  color: $color--text;
+  font-size: $font-size--default-lg;
+  font-family: $font--family;
+  overflow: auto;
+}
+
+//@media screen and (min-width: $bp-min-large){
+//  body {
+//    font-size: $font-size--default-lg;
+//  }
+//}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:disabled {
+  pointer-events: none;
+}

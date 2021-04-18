@@ -1,0 +1,17 @@
+.l-flex-positioning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-flex-positioning--left {
+  justify-content: flex-start;
+}
+
+.l-flex-positioning--right {
+  justify-content: flex-end;
+}
+
+.l-flex-positioning--space-between {
+  justify-content: space-between;
+}

@@ -1,0 +1,68 @@
+// /********** font-weight **********/
+.u-text--ultra-font {
+  font-weight: $font-weight--ultra;
+}
+
+.u-text--bold-font {
+  font-weight: $font-weight--bold;
+}
+
+.u-text--medium-font {
+  font-weight: $font-weight--medium;
+}
+
+.u-text--regular-font {
+  font-weight: $font-weight--regular;
+}
+
+.u-text--thin-font {
+  font-weight: $font-weight--thin;
+}
+
+// font-weight reset
+.u-text--normal-font {
+  font-weight: normal;
+}
+
+
+// /********** text transform **********/
+// text transform
+.u-text--uppercase {
+  text-transform: uppercase;
+}
+
+/********** text align **********/
+// text alignment
+.u-text--align-center {
+  text-align: center;
+}
+
+.u-text--align-left {
+  text-align: left;
+}
+
+.u-text--align-right {
+  text-align: right;
+}
+
+
+.u-text--white-space-nowrap{
+  white-space:nowrap;
+};
+
+// /********** text decoration **********/
+.u-text--underlined-action {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+
+    // exception selector nesting here: need to specify underline to this selector as underline
+    // not working on IE when applied directly to the interaction element
+    .c-icon-txt__txt {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+

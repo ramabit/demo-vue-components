@@ -1,0 +1,29 @@
+.c-tabs {
+    overflow: hidden;
+    border: $border-width solid $color--border;
+    border-radius: $border--radius;
+    color: $color--white;
+    background-color: $color--grey-nero;
+}
+
+.c-tab-button {
+    width: 100%;
+    background-color: inherit;
+    border: $border-width solid $color--white;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: $color--white;
+
+    &:hover {
+        background-color: $color--blue-very-light;
+    }
+}
+
+.c-tab--active {
+    background-color: $color--blue-light;
+}
+
+.c-tab-content {
+    background-color: $color--blue-light;
+}

@@ -1,0 +1,16 @@
+// naming: $line-height--
+
+$line-height--default: 1.335; // for 18px font-size -> line-height 24px
+
+$line-height--tallest: 1.7;
+$line-height--tall: 1.4;
+
+$line-height--regular: 1.25; // 24px font-size -> line-height 30px
+$line-height--regular-2: 1.286; // 21px font-size -> line-height 27px
+
+$line-height--small-3: 1.167; // 36px / 18px font-size -> line-height 42px / 21px
+$line-height--small-2: 1.125; // 48px font-size -> line-height 54px
+$line-height--small: 1.1; // 60px font-size -> line-height 66px
+
+$line-height--same-as-font-size: 1;
+$line-height--reset: 0;

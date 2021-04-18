@@ -1,0 +1,24 @@
+// breakpoints
+$breakpoints: (
+  'xsmall': (min-width: 0),
+  'max-xsmall': (max-width: 319px),
+  'small': (min-width: 320px),
+  'max-small': (max-width: 635px),
+  'medium': (min-width: 636px),
+  'max-medium': (max-width: 1023px),
+  'large': (min-width: 1024px),
+  'max-large': (max-width: 1499px),
+  'xlarge' : (min-width: 1500px),
+);
+
+// general min breakpoints
+$bp-min-small: 420px;
+$bp-min-medium: 768px;
+$bp-min-large: 1024px;
+$bp-min-xlarge: 1500px;
+
+// general max breakpoints
+$bp-max-xsmall: $bp-min-small - 1;
+$bp-max-small: $bp-min-medium - 1;
+$bp-max-medium: $bp-min-large - 1;
+$bp-max-large: $bp-min-xlarge - 1;

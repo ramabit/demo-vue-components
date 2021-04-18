@@ -1,0 +1,54 @@
+.l-grid-display {
+  display: grid;
+}
+
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+[class*='l-grid__col-'] {
+  // split @include flex(0, 0, auto) into individual props
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+$bkp-name: xs;
+.l-grid__col-#{$bkp-name} {
+  flex-basis: auto;
+}
+@for $i from 1 through $fx-grid-grid-columns {
+  .l-grid__col-#{$bkp-name}-#{$i} {
+    flex-basis: 100% / $fx-grid-grid-columns * $i;
+    max-width: 100% / $fx-grid-grid-columns * $i;
+  }
+}
+
+.l-grid__col-#{$bkp-name} {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+@each $breakpoint in $grid-breakpoints {
+  $bkp-name: nth($breakpoint, 1);
+  $size: nth($breakpoint, 2);
+  @media only screen and (min-width: $size) {
+    .l-grid__col-#{$bkp-name} {
+      flex-basis: auto;
+    }
+    @for $i from 1 through $fx-grid-grid-columns {
+      .l-grid__col-#{$bkp-name}-#{$i} {
+        flex-basis: 100% / $fx-grid-grid-columns * $i;
+        max-width: 100% / $fx-grid-grid-columns * $i;
+      }
+    }
+
+    .l-grid__col-#{$bkp-name} {
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 100%;
+    }
+  }
+}
