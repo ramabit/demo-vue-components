@@ -1,3 +1,4 @@
+<template></template>
 <script>
 export default {
     name: "CustomSelect",
@@ -15,7 +16,7 @@ export default {
         }
     },
     methods: {
-        toggleOptionVisible() {
+        toggleOptionsVisible() {
           this.optionsVisible = !this.optionsVisible;
         },
         select(option) {

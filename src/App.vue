@@ -8,7 +8,7 @@
         inline-template
     >
       <div class="c-custom-select">
-        <div class="selector" @click="toggleOptionVisible()">
+        <div class="selector" @click="toggleOptionsVisible()">
           <div class="label">
             <span>{{ value }}</span>
           </div>

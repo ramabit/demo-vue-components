@@ -84,6 +84,7 @@ export default {
     loadContent() {
       this.users = [];
       this.selectedUser = {};
+
       // load users
       fetch(`https://jsonplaceholder.typicode.com/users`)
         .then(response => response.json())
@@ -95,17 +96,20 @@ export default {
         .catch(error => console.log(error))
         .finally(() => {
           this.users.forEach(user => {
+
+            // load posts for user
             if (user && user.name) {
               user.recentPosts = [];
               fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`)
                 .then(response => response.json())
                 .then(posts => {
-                  user.recentPosts = posts.slice(0, 3);
+                  user.recentPosts = posts.slice(0, 3); // take only 3
                 })
-              .finally(() => {
-                this.selectedUser = this.users[this.initialSelectedTab]; // assign initial selected user
-                this.forceRerender();
-              });
+                .catch(error => console.log(error))
+                .finally(() => {
+                  this.selectedUser = this.users[this.initialSelectedTab]; // assign initial selected user
+                  this.forceRerender(); // rerender
+                });
             }
           })
         });

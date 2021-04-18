@@ -14,8 +14,10 @@
 </template>
 
 <script>
+import SvgIcon from "./SvgIcon";
 export default {
   name: "Accordion",
+  components: {SvgIcon}, // added only to avoid warning on tests, but theoretically not  needed because the component is registered globally
   props: {
     title: {
       type: String,
